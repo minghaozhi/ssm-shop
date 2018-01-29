@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../shop-common/shop-common.iml" filepath="$PROJECT_DIR$/../shop-common/shop-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shop-core/shop-core.iml" filepath="$PROJECT_DIR$/../shop-core/shop-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shop-core/shop-core-dao/shop-core-dao.iml" filepath="$PROJECT_DIR$/../shop-core/shop-core-dao/shop-core-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shop-core/shop-core-pojo/shop-core-pojo.iml" filepath="$PROJECT_DIR$/../shop-core/shop-core-pojo/shop-core-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shop-core/shop-core-service/shop-core-service.iml" filepath="$PROJECT_DIR$/../shop-core/shop-core-service/shop-core-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shop-core/shop-core-web/shop-core-web.iml" filepath="$PROJECT_DIR$/../shop-core/shop-core-web/shop-core-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-parent.iml" filepath="$PROJECT_DIR$/shop-parent.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="shop-core-web:war">
+    <output-path>$PROJECT_DIR$/../shop-core/shop-core-web/target</output-path>
+    <root id="archive" name="shop-core-web.war">
+      <element id="artifact" artifact-name="shop-core-web:war exploded" />
+    </root>
+  </artifact>
+</component>
