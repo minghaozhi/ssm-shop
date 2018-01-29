@@ -17,6 +17,7 @@
         <module>shop-core-pojo</module>
         <module>shop-core-service</module>
         <module>shop-core-web</module>
+
     </modules>
 
     <dependencies>
