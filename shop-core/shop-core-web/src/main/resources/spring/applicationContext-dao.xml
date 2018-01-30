@@ -29,8 +29,8 @@
         <!-- 加载mybatis的全局配置文件 -->
         <property name="configLocation" value="classpath:mybatis/mybatis-config.xml" />
         <!-- 加载mapper.xml -->
-        <property name="mapperLocations" value="classpath:mybatis/mappers/**/*.xml"></property>
-
+        <!--<property name="mapperLocations" value="classpath:mybatis/mappers/**/*.xml"></property>
+-->
     </bean>
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.ssm.mapper" />
