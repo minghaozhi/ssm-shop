@@ -16,7 +16,8 @@
         <property name="prefix" value="/WEB-INF/views/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-
+<!--配置资源映射-->
+    <mvc:default-servlet-handler/>
 
     <!--引用dubbo服务-->
     <dubbo:application name="shop-core-web"/>
