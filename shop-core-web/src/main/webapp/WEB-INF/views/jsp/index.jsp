@@ -4,14 +4,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>宜立方商城后台管理系统</title>
-<link rel="stylesheet" type="text/css" href="js/jquery-easyui-1.4.1/themes/gray/easyui.css" />
-<link rel="stylesheet" type="text/css" href="js/jquery-easyui-1.4.1/themes/icon.css" />
-<link rel="stylesheet" type="text/css" href="css/e3.css" />
-<link rel="stylesheet" type="text/css" href="css/default.css" />
-<script type="text/javascript" src="js/jquery-easyui-1.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery-easyui-1.4.1/jquery.easyui.min.js"></script>
-<script type="text/javascript" src="js/jquery-easyui-1.4.1/locale/easyui-lang-zh_CN.js"></script>
-<script type="text/javascript" src="js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../js/jquery-easyui-1.4.1/themes/gray/easyui.css" />
+<link rel="stylesheet" type="text/css" href="../../../js/jquery-easyui-1.4.1/themes/icon.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/e3.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/default.css" />
+<script type="text/javascript" src="../../../js/jquery-easyui-1.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="../../../js/jquery-easyui-1.4.1/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="../../../js/jquery-easyui-1.4.1/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="../../../js/common.js"></script>
 <style type="text/css">
 	.content {
 		padding: 10px 10px 10px 10px;
@@ -37,14 +37,14 @@
          	<li>
          		<span>网站内容管理</span>
          		<ul>
-	         		<li data-options="attributes:{'url':'content-category'}">内容分类管理</li>
-	         		<li data-options="attributes:{'url':'content'}">内容管理</li>
+	         		<li data-options="attributes:{'url':'jsp/content-category'}">内容分类管理</li>
+	         		<li data-options="attributes:{'url':'jsp/content'}">内容管理</li>
 	         	</ul>
          	</li>
          	<li>
          		<span>索引库管理</span>
          		<ul>
-	         		<li data-options="attributes:{'url':'index-item'}">solr索引库维护</li>
+	         		<li data-options="attributes:{'url':'jsp/index-item'}">solr索引库维护</li>
 	         	</ul>
          	</li>
          </ul>
