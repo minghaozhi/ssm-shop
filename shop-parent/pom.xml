@@ -7,13 +7,11 @@
     <artifactId>shop-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>../shop-common</module>
-        <module>../shop-core</module>
-    </modules>
+
 
     <!--集中定义版本依赖-->
     <properties>
+        <java.version>1.8</java.version>
         <junit.version>4.9</junit.version>
         <spring.version>4.3.13.RELEASE</spring.version>
         <mybatis.version>3.4.5</mybatis.version>
@@ -26,7 +24,7 @@
         <druid.version>1.1.6</druid.version>
         <httpclient.version>4.5</httpclient.version>
         <jstl.version>1.2</jstl.version>
-        <servlet-api.version>2.5</servlet-api.version>
+        <servlet-api.version>3.1.0</servlet-api.version>
         <jsp-api.version>2.0</jsp-api.version>
         <joda-time.version>2.5</joda-time.version>
         <commons-lang3.version>3.7</commons-lang3.version>
@@ -44,6 +42,7 @@
         <freemarker.version>2.3.27</freemarker.version>
         <quartz.version>2.2.2</quartz.version>
         <log4j.version>2.5</log4j.version>
+        <commons-logging.version>1.2</commons-logging.version>
     </properties>
 
     <dependencyManagement>
@@ -109,6 +108,11 @@
                 <version>${joda-time.version}</version>
             </dependency>
             <!--apache工具组件-->
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>${commons-logging.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
@@ -202,7 +206,7 @@
             </dependency>
             <dependency>
                 <groupId>javax.servlet</groupId>
-                <artifactId>servlet-api</artifactId>
+                <artifactId>javax.servlet-api</artifactId>
                 <version>${servlet-api.version}</version>
                 <scope>provided</scope>
             </dependency>
