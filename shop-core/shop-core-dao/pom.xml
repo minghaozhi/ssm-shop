@@ -29,7 +29,6 @@
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
-            <version>${pageHelper.version}</version>
         </dependency>
         <dependency>
             <groupId>com.github.miemiedev</groupId>

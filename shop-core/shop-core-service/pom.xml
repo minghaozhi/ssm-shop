@@ -75,9 +75,11 @@
             <groupId>com.github.sgroschupf</groupId>
             <artifactId>zkclient</artifactId>
         </dependency>
+        <!--通用mapper-->
         <dependency>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper</artifactId>
+
         </dependency>
     </dependencies>
 </project>
