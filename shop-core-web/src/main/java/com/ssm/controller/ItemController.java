@@ -1,5 +1,6 @@
 package com.ssm.controller;
 
+import com.ssm.common.pojo.EasyUIDataGridResult;
 import com.ssm.pojo.TbItem;
 
 import com.ssm.service.ItemService;
@@ -25,5 +26,11 @@ public class ItemController {
     public TbItem getItemById(@PathVariable Long itemId){
         TbItem tbItem=itemService.getItemById(itemId);
         return tbItem;
+    }
+    @RequestMapping("/item/list")
+    @ResponseBody
+    public EasyUIDataGridResult  getItemList(Integer page,Integer rows){
+        EasyUIDataGridResult result=itemService.getItemList(page,rows);
+        return  result;
     }
 }
