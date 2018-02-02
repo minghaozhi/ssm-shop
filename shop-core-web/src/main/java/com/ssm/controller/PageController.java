@@ -15,14 +15,14 @@ public class PageController {
 
     @RequestMapping("/")
     public String showIndex(){
-        return "index";
+        return "/index.jsp";
     }
 
-    @RequestMapping("/{page}")
+    @RequestMapping("page/{page}")
     public String showPage(@PathVariable String page){
         return page;
     }
-    @RequestMapping(value = "/{model}/{pageName}", method = RequestMethod.GET)
+    @RequestMapping(value = "page/{model}/{pageName}", method = RequestMethod.GET)
     public String toPage(@PathVariable("model") String model, @PathVariable("pageName") String pageName) {
 
 
