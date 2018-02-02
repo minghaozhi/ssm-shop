@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class TbOrderExample implements Serializable {
+public class TbOrderExample {
     protected String orderByClause;
 
     protected boolean distinct;
