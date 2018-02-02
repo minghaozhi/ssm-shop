@@ -43,6 +43,8 @@
         <log4j.version>2.5</log4j.version>
         <commons-logging.version>1.2</commons-logging.version>
         <mapper.version>3.3.9</mapper.version>
+        <jdom.version>1.1</jdom.version>
+        <dom4j.version>1.6.1</dom4j.version>
     </properties>
 
     <dependencyManagement>
@@ -260,6 +262,17 @@
                 <artifactId>freemarker</artifactId>
                 <version>${freemarker.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.jdom</groupId>
+                <artifactId>jdom</artifactId>
+                <version>${jdom.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dom4j</groupId>
+                <artifactId>dom4j</artifactId>
+                <version>${dom4j.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
     <build>
