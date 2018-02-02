@@ -19,7 +19,6 @@
         <module>shop-core-interface</module>
 
     </modules>
-
     <dependencies>
         <dependency>
             <groupId>com.ssm.shop</groupId>
