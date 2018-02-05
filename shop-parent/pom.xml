@@ -7,6 +7,10 @@
     <artifactId>shop-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>../shop-portal-web</module>
+        <module>../shop-content</module>
+    </modules>
 
     <!--集中定义版本依赖-->
     <properties>
