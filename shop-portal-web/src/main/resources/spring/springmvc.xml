@@ -10,23 +10,21 @@
         http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com.ssm.controller"/>
+ <!--加载配置文件-->
+    <context:property-placeholder location="classpath:conf/resource.properties"/>
+
+    <context:component-scan base-package="com.portal.controller"/>
     <mvc:annotation-driven />
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/views/"/>
+        <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
 <!--配置资源映射-->
     <mvc:default-servlet-handler/>
 
-    <!-- 访问静态资源 -->
-    <mvc:resources location="/js/" mapping="/**"/>
-    <mvc:resources location="/css/" mapping="/**"/>
 
     <!--引用dubbo服务-->
-    <dubbo:application name="shop-core-web"/>
+    <dubbo:application name="shop-portal-web"/>
     <dubbo:registry protocol="zookeeper" address="119.29.163.75:2181"/>
-    <dubbo:reference interface="com.ssm.service.ItemService" id="itemService"/>
-    <dubbo:reference interface="com.ssm.service.ItemCatService" id="itemCatService"/>
-    <dubbo:reference interface="com.content.service.ContentCategoryService" id="contentCategoryService"/>
+    <!--<dubbo:reference interface="com.ssm.service.ItemService" id="itemService"/>-->
 </beans>
